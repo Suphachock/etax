@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../data/standard/TaxInvoice_Schematron_2p0.sch"  type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<rsm:TaxInvoice_CrossIndustryInvoice xmlns:ram="urn:etda:uncefact:data:standard:TaxInvoice_ReusableAggregateBusinessInformationEntity:2" 
+	xmlns:rsm="urn:etda:uncefact:data:standard:TaxInvoice_CrossIndustryInvoice:2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="urn:etda:uncefact:data:standard:TaxInvoice_CrossIndustryInvoice:2 file:../data/standard/TaxInvoice_CrossIndustryInvoice_2p0.xsd">
+	<rsm:ExchangedDocumentContext>
+		<ram:GuidelineSpecifiedDocumentContextParameter>
+			<ram:ID schemeAgencyID="ETDA" schemeVersionID="v2.0">ER3-2559</ram:ID>
+		</ram:GuidelineSpecifiedDocumentContextParameter>
+	</rsm:ExchangedDocumentContext>
+	<rsm:ExchangedDocument>
+		<ram:ID>IV24/04651</ram:ID> <!-- เลข Invoice -->
+		<ram:Name>ใบกำกับภาษี</ram:Name>
+		<ram:TypeCode>388</ram:TypeCode>
+		<ram:IssueDateTime>2016-09-12T19:19:25.0</ram:IssueDateTime>
+		<ram:PurposeCode>TIVC01</ram:PurposeCode>
+		<ram:CreationDateTime>2016-09-12T15:51:26.0</ram:CreationDateTime>
+		<ram:IncludedNote>
+			<ram:Subject>หมายเหตุ</ram:Subject>
+		</ram:IncludedNote>
+	</rsm:ExchangedDocument>
+	<rsm:SupplyChainTradeTransaction>
+		<ram:ApplicableHeaderTradeAgreement>
+		
+ 			<!-- ************************ ส่วนข้อมูลบริษัท ************************ -->
+			<ram:SellerTradeParty>
+				<ram:Name>บริษัท ชาวเวอร์คิง แมนูแฟคเจอริ่ง จำกัด</ram:Name>
+				<ram:SpecifiedTaxRegistration>
+					<ram:ID schemeID="TXID">010553612306700000</ram:ID> <!-- เลขผู้เสียภาษี -->
+				</ram:SpecifiedTaxRegistration>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>20000</ram:PostcodeCode> <!-- รหัสไปรษณีย์ -->
+					<ram:CityName>2001</ram:CityName> <!-- รหัสอำเภอ/เขต -->
+					<ram:CitySubDivisionName>200109</ram:CitySubDivisionName> <!-- รหัสตำบล -->
+					<ram:CountryID schemeID="3166-1 alpha-2">TH</ram:CountryID>
+					<ram:CountrySubDivisionID>20</ram:CountrySubDivisionID> <!-- รหัสจังหวัด -->
+					<ram:BuildingNumber>700/494</ram:BuildingNumber> <!--บ้านเลขที่ -->
+				</ram:PostalTradeAddress>
+			</ram:SellerTradeParty>
+
+			<!-- ************************ ส่วนข้อมูลลูกค้า ************************ -->
+			<ram:BuyerTradeParty> 
+				<ram:Name>-</ram:Name> <!-- ชื่อลูกค้า -->
+				<ram:SpecifiedTaxRegistration>
+					<ram:ID schemeID="NIDN" >1104599001271</ram:ID> <!-- เลขผู้เสียภาษี -->
+				</ram:SpecifiedTaxRegistration>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>10310</ram:PostcodeCode>  <!-- รหัสไปรษณีย์ -->
+					<ram:LineOne>-</ram:LineOne> <!-- ที่อยู่ -->
+					<ram:LineTwo>-</ram:LineTwo> <!-- ที่อยู่ -->
+					<ram:CountryID schemeID="3166-1 alpha-2">TH</ram:CountryID>
+				</ram:PostalTradeAddress>
+			</ram:BuyerTradeParty>
+
+		</ram:ApplicableHeaderTradeAgreement>
+
+		<!-- ************************ ส่วนที่อยู่จัดส่งลูกค้า ************************ -->
+		<ram:ApplicableHeaderTradeDelivery>
+			<ram:ShipToTradeParty>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>10330</ram:PostcodeCode> <!-- รหัสไปรษณีย์ -->
+					<ram:LineThree>-</ram:LineThree>   <!-- ที่อยู่ -->
+					<ram:StreetName>-</ram:StreetName>   <!-- ที่อยู่ -->
+					<ram:CityName>1004</ram:CityName> <!-- รหัสอำเภอ/เขต -->
+					<ram:CitySubDivisionName>100402</ram:CitySubDivisionName> <!-- รหัสตำบล -->
+					<ram:CountryID schemeID="3166-1 alpha-2">TH</ram:CountryID>
+					<ram:CountrySubDivisionID>10</ram:CountrySubDivisionID> <!-- รหัสจังหวัด -->
+					<ram:BuildingNumber>-</ram:BuildingNumber> <!--บ้านเลขที่ -->
+				</ram:PostalTradeAddress>
+			</ram:ShipToTradeParty>
+		</ram:ApplicableHeaderTradeDelivery>
+
+		<!-- ************************ ส่วนการคำนวณ VAT ************************ -->
+		<ram:ApplicableHeaderTradeSettlement>
+			<ram:InvoiceCurrencyCode listID="ISO 4217 3A">THB</ram:InvoiceCurrencyCode>
+			<ram:ApplicableTradeTax>
+				<ram:TypeCode>VAT</ram:TypeCode>
+				<ram:CalculatedRate>7</ram:CalculatedRate>
+				<ram:BasisAmount>0</ram:BasisAmount>  <!-- ราคาสินค้าทั้งหมด (ก่อน Vat) -->
+				<ram:CalculatedAmount>0</ram:CalculatedAmount> <!-- Vat ราคาสินค้าทั้งหมด -->
+			</ram:ApplicableTradeTax>
+			<ram:SpecifiedTradeAllowanceCharge>
+				<ram:ChargeIndicator>false</ram:ChargeIndicator>
+				<ram:ActualAmount>0</ram:ActualAmount> <!-- รวมส่วนลดทั้งหมด -->
+				<ram:ReasonCode>95</ram:ReasonCode>
+				<ram:Reason>ส่วนลดจากราคาปกติ</ram:Reason>
+			</ram:SpecifiedTradeAllowanceCharge>
+			<ram:SpecifiedTradeAllowanceCharge>
+				<ram:ChargeIndicator>false</ram:ChargeIndicator>
+				<ram:ActualAmount>0</ram:ActualAmount>
+			</ram:SpecifiedTradeAllowanceCharge>
+			<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+				<ram:LineTotalAmount>0</ram:LineTotalAmount> <!-- ราคาสินค้าทั้งหมด (ก่อน Vat) -->
+				<ram:AllowanceTotalAmount>0</ram:AllowanceTotalAmount> <!-- รวมส่วนลดทั้งหมด -->
+				<ram:TaxBasisTotalAmount>0</ram:TaxBasisTotalAmount> <!-- ราคาสินค้าหลักหักส่วนลด-->
+				<ram:TaxTotalAmount>0</ram:TaxTotalAmount> <!-- Vat ของราคาสินค้าหลักหักส่วนลด-->
+				<ram:GrandTotalAmount>0</ram:GrandTotalAmount> <!-- ราคาสินค้าทั้งหมดรวมส่วนลด + Vat7% -->
+			</ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+		</ram:ApplicableHeaderTradeSettlement>
+
+		<!-- ************************ ส่วนรายการสินค้า ************************ -->
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>1</ram:LineID>	<!-- ลำดับรายการสินค้า -->
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:ID>PR00001</ram:ID> <!-- รหัสสินค้า -->
+				<ram:Name>-</ram:Name> <!-- ชื่อสินค้า -->
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>359</ram:ChargeAmount> <!-- ราคาสินค้าก่อน Vat -->
+				</ram:GrossPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="PIECE">4500</ram:BilledQuantity> <!-- จำนวนสินค้าและหน่วย(unitCode) -->
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:TypeCode>VAT</ram:TypeCode>
+					<ram:CalculatedRate>7</ram:CalculatedRate>
+					<ram:BasisAmount>0</ram:BasisAmount> <!-- Sum ราคาสินค้าก่อน Vat หลังหลักส่วนลด -->
+					<ram:CalculatedAmount>0</ram:CalculatedAmount>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeAllowanceCharge>
+					<ram:ChargeIndicator>false</ram:ChargeIndicator>
+					<ram:ActualAmount>0</ram:ActualAmount>
+					<ram:ReasonCode>95</ram:ReasonCode>
+					<ram:Reason>ส่วนลดจากราคาปกติ</ram:Reason>
+				</ram:SpecifiedTradeAllowanceCharge>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:TaxTotalAmount>0</ram:TaxTotalAmount>
+					<ram:NetLineTotalAmount currencyID="THB">0</ram:NetLineTotalAmount>
+					<ram:NetIncludingTaxesLineTotalAmount currencyID="THB">0</ram:NetIncludingTaxesLineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+	</rsm:SupplyChainTradeTransaction>	
+</rsm:TaxInvoice_CrossIndustryInvoice>
