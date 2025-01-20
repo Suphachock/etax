@@ -22,4 +22,4 @@ def get_signer_info(xml_file):
            print(f"ผู้ลงนาม: {attribute.value}")
            break
 
-get_signer_info("./signed-ETDA-invoice.xml")
+get_signer_info("./signed_invoice999.xml")

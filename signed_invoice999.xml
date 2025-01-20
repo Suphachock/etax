@@ -1,0 +1,206 @@
+<rsm:TaxInvoice_CrossIndustryInvoice xmlns:ram="urn:etda:uncefact:data:standard:TaxInvoice_ReusableAggregateBusinessInformationEntity:2" xmlns:rsm="urn:etda:uncefact:data:standard:TaxInvoice_CrossIndustryInvoice:2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:etda:uncefact:data:standard:TaxInvoice_CrossIndustryInvoice:2 file:../data/standard/TaxInvoice_CrossIndustryInvoice_2p0.xsd">
+	<rsm:ExchangedDocumentContext>
+		<ram:GuidelineSpecifiedDocumentContextParameter>
+			<ram:ID schemeAgencyID="ETDA" schemeVersionID="v2.0">ER3-2559</ram:ID>
+		</ram:GuidelineSpecifiedDocumentContextParameter>
+	</rsm:ExchangedDocumentContext>
+	<rsm:ExchangedDocument>
+		<ram:ID>IV24/04651</ram:ID>
+		<!-- เลข Invoice -->
+		<ram:Name>ใบกำกับภาษี</ram:Name>
+		<ram:TypeCode>388</ram:TypeCode>
+		<ram:IssueDateTime>2016-09-12T19:19:25.0</ram:IssueDateTime>
+		<ram:PurposeCode>TIVC01</ram:PurposeCode>
+		<ram:CreationDateTime>2016-09-12T15:51:26.0</ram:CreationDateTime>
+		<ram:IncludedNote>
+			<ram:Subject>หมายเหตุ</ram:Subject>
+		</ram:IncludedNote>
+	</rsm:ExchangedDocument>
+	<rsm:SupplyChainTradeTransaction>
+		<ram:ApplicableHeaderTradeAgreement>
+			<!-- ************************ ส่วนข้อมูลบริษัท ************************ -->
+			<ram:SellerTradeParty>
+				<ram:Name>บริษัท ชาวเวอร์คิง แมนูแฟคเจอริ่ง จำกัด</ram:Name>
+				<ram:SpecifiedTaxRegistration>
+					<ram:ID schemeID="TXID">010553612306700000</ram:ID>
+					<!-- เลขผู้เสียภาษี -->
+				</ram:SpecifiedTaxRegistration>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>20000</ram:PostcodeCode>
+					<!-- รหัสไปรษณีย์ -->
+					<ram:CityName>2001</ram:CityName>
+					<!-- รหัสอำเภอ/เขต -->
+					<ram:CitySubDivisionName>200109</ram:CitySubDivisionName>
+					<!-- รหัสตำบล -->
+					<ram:CountryID schemeID="3166-1 alpha-2">TH</ram:CountryID>
+					<ram:CountrySubDivisionID>20</ram:CountrySubDivisionID>
+					<!-- รหัสจังหวัด -->
+					<ram:BuildingNumber>700/494</ram:BuildingNumber>
+					<!--บ้านเลขที่ -->
+				</ram:PostalTradeAddress>
+			</ram:SellerTradeParty>
+			<!-- ************************ ส่วนข้อมูลลูกค้า ************************ -->
+			<ram:BuyerTradeParty>
+				<ram:Name>-</ram:Name>
+				<!-- ชื่อลูกค้า -->
+				<ram:SpecifiedTaxRegistration>
+					<ram:ID schemeID="NIDN">1104599001271</ram:ID>
+					<!-- เลขผู้เสียภาษี -->
+				</ram:SpecifiedTaxRegistration>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>10310</ram:PostcodeCode>
+					<!-- รหัสไปรษณีย์ -->
+					<ram:LineOne>-</ram:LineOne>
+					<!-- ที่อยู่ -->
+					<ram:LineTwo>-</ram:LineTwo>
+					<!-- ที่อยู่ -->
+					<ram:CountryID schemeID="3166-1 alpha-2">TH</ram:CountryID>
+				</ram:PostalTradeAddress>
+			</ram:BuyerTradeParty>
+		</ram:ApplicableHeaderTradeAgreement>
+		<!-- ************************ ส่วนที่อยู่จัดส่งลูกค้า ************************ -->
+		<ram:ApplicableHeaderTradeDelivery>
+			<ram:ShipToTradeParty>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>10330</ram:PostcodeCode>
+					<!-- รหัสไปรษณีย์ -->
+					<ram:LineThree>-</ram:LineThree>
+					<!-- ที่อยู่ -->
+					<ram:StreetName>-</ram:StreetName>
+					<!-- ที่อยู่ -->
+					<ram:CityName>1004</ram:CityName>
+					<!-- รหัสอำเภอ/เขต -->
+					<ram:CitySubDivisionName>100402</ram:CitySubDivisionName>
+					<!-- รหัสตำบล -->
+					<ram:CountryID schemeID="3166-1 alpha-2">TH</ram:CountryID>
+					<ram:CountrySubDivisionID>10</ram:CountrySubDivisionID>
+					<!-- รหัสจังหวัด -->
+					<ram:BuildingNumber>-</ram:BuildingNumber>
+					<!--บ้านเลขที่ -->
+				</ram:PostalTradeAddress>
+			</ram:ShipToTradeParty>
+		</ram:ApplicableHeaderTradeDelivery>
+		<!-- ************************ ส่วนการคำนวณ VAT ************************ -->
+		<ram:ApplicableHeaderTradeSettlement>
+			<ram:InvoiceCurrencyCode listID="ISO 4217 3A">THB</ram:InvoiceCurrencyCode>
+			<ram:ApplicableTradeTax>
+				<ram:TypeCode>VAT</ram:TypeCode>
+				<ram:CalculatedRate>7</ram:CalculatedRate>
+				<ram:BasisAmount>0</ram:BasisAmount>
+				<!-- ราคาสินค้าทั้งหมด (ก่อน Vat) -->
+				<ram:CalculatedAmount>0</ram:CalculatedAmount>
+				<!-- Vat ราคาสินค้าทั้งหมด -->
+			</ram:ApplicableTradeTax>
+			<ram:SpecifiedTradeAllowanceCharge>
+				<ram:ChargeIndicator>false</ram:ChargeIndicator>
+				<ram:ActualAmount>0</ram:ActualAmount>
+				<!-- รวมส่วนลดทั้งหมด -->
+				<ram:ReasonCode>95</ram:ReasonCode>
+				<ram:Reason>ส่วนลดจากราคาปกติ</ram:Reason>
+			</ram:SpecifiedTradeAllowanceCharge>
+			<ram:SpecifiedTradeAllowanceCharge>
+				<ram:ChargeIndicator>false</ram:ChargeIndicator>
+				<ram:ActualAmount>0</ram:ActualAmount>
+			</ram:SpecifiedTradeAllowanceCharge>
+			<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+				<ram:LineTotalAmount>0</ram:LineTotalAmount>
+				<!-- ราคาสินค้าทั้งหมด (ก่อน Vat) -->
+				<ram:AllowanceTotalAmount>0</ram:AllowanceTotalAmount>
+				<!-- รวมส่วนลดทั้งหมด -->
+				<ram:TaxBasisTotalAmount>0</ram:TaxBasisTotalAmount>
+				<!-- ราคาสินค้าหลักหักส่วนลด-->
+				<ram:TaxTotalAmount>0</ram:TaxTotalAmount>
+				<!-- Vat ของราคาสินค้าหลักหักส่วนลด-->
+				<ram:GrandTotalAmount>0</ram:GrandTotalAmount>
+				<!-- ราคาสินค้าทั้งหมดรวมส่วนลด + Vat7% -->
+			</ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+		</ram:ApplicableHeaderTradeSettlement>
+		<!-- ************************ ส่วนรายการสินค้า ************************ -->
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>1</ram:LineID>
+				<!-- ลำดับรายการสินค้า -->
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:ID>PR00001</ram:ID>
+				<!-- รหัสสินค้า -->
+				<ram:Name>-</ram:Name>
+				<!-- ชื่อสินค้า -->
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>359</ram:ChargeAmount>
+					<!-- ราคาสินค้าก่อน Vat -->
+				</ram:GrossPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="PIECE">4500</ram:BilledQuantity>
+				<!-- จำนวนสินค้าและหน่วย(unitCode) -->
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:TypeCode>VAT</ram:TypeCode>
+					<ram:CalculatedRate>7</ram:CalculatedRate>
+					<ram:BasisAmount>0</ram:BasisAmount>
+					<!-- Sum ราคาสินค้าก่อน Vat หลังหลักส่วนลด -->
+					<ram:CalculatedAmount>0</ram:CalculatedAmount>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeAllowanceCharge>
+					<ram:ChargeIndicator>false</ram:ChargeIndicator>
+					<ram:ActualAmount>0</ram:ActualAmount>
+					<ram:ReasonCode>95</ram:ReasonCode>
+					<ram:Reason>ส่วนลดจากราคาปกติ</ram:Reason>
+				</ram:SpecifiedTradeAllowanceCharge>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:TaxTotalAmount>0</ram:TaxTotalAmount>
+					<ram:NetLineTotalAmount currencyID="THB">0</ram:NetLineTotalAmount>
+					<ram:NetIncludingTaxesLineTotalAmount currencyID="THB">0</ram:NetIncludingTaxesLineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+	</rsm:SupplyChainTradeTransaction>
+	<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Id="xmldsig-273078a5-1957-4fac-822d-d52ee4f19423">
+		<ds:SignedInfo>
+			<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+			<ds:Reference Id="xmldsig-273078a5-1957-4fac-822d-d52ee4f19423-ref0" URI="">
+				<ds:Transforms>
+					<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</ds:Transforms>
+				<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+				<ds:DigestValue>4OzzFhoFgribrwVtyn4NUm5NjnY7PMbOSN1g++uxa5UH6Yhnz1KXf/nKY7vBX7fb/+mggqJUaId9p3j3R4lqXw==</ds:DigestValue>
+			</ds:Reference>
+			<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-273078a5-1957-4fac-822d-d52ee4f19423-signedprops">
+				<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+				<ds:DigestValue>oiPpHBtsknqCGdhB7fU/T14xBSOxuUBjNMTbzQHlbVRtGPXzE7RSQTeeeFLhFsH7/V49iBUKvuexBG2Dku5rgw==</ds:DigestValue>
+			</ds:Reference>
+		</ds:SignedInfo>
+		<ds:SignatureValue Id="xmldsig-273078a5-1957-4fac-822d-d52ee4f19423-sigvalue">MYYtWyBUVJq6WWhrpkJ/SY59YCH5S+zNRs+laSzHP/RXV7Ml77Svi8lDcJx4bik0g9KbqUAUZDB73vG+JLD5d6hOm5kGc/q3oRCacMthsVKRUog1qq9yvvMxV0fsAqJU3eZG5VRYvLJ4C1h+oWC11A0l6GGx9Q/t/wjqPQZwrzLkm9t438RzKQuY5rOoDjjib43QVg8rqK0qtarDrrX5GOU+B9Q1bX+/kfFKWhWlR65qJL6n+uki17vTBB5K+30nC/aQLEzJh2vZffR/6T807v/iIuPjjUbO9RG8TpX2mATClZOw4GsFve2zgwWuCYp185334fT4j6Ii0dLHE6I1Vg==</ds:SignatureValue>
+		<ds:KeyInfo>
+			<ds:X509Data>
+				<ds:X509Certificate>MIIDcDCCAligAwIBAgIUVif7SWAS/Ji0DUVlX5PiXM/cGCMwDQYJKoZIhvcNAQELBQAwcjEzMDEGA1UEAwwq4LiZ4Liy4Lii4LiX4LiU4Liq4Lit4LiaIOC4iOC4s+C4geC4seC4lCAxMTswOQYDVQQKDDLguJrguKPguLTguKnguLHguJcg4LiX4LiU4Liq4Lit4LiaIOC4iOC4s+C4geC4seC4lDAeFw0yNTAxMTgxOTI4MjVaFw0yNjAxMTgxOTI4MjVaMHIxMzAxBgNVBAMMKuC4meC4suC4ouC4l+C4lOC4quC4reC4miDguIjguLPguIHguLHguJQgMTE7MDkGA1UECgwy4Lia4Lij4Li04Lip4Lix4LiXIOC4l+C4lOC4quC4reC4miDguIjguLPguIHguLHguJQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCf1NZbG7AXrCGLnnMJFb5lSKRZCcguU+pWT88F4Gscnt9bsmOSN+qqR9Ad+Jk7naWTW5bFLimMzKIJjBqtJIM/7ZYqVUVujSDUSHenu1hG2qIw++HuVVwyZNETgR1w3JPYwqthIi1OPBujW5NKiTvkVK0btRl1dKRiN4cEIwmx1mF76Nn5rk52afigCegONSvNmN/0fltahq2gcQHYqQVVhTA/7WegMXfpjyBeHipgpDLzJshWnblyAtVkRXlv/sm8qwTOCP2EeXbXV1JrVYfpIBNJy7TMNYniWZgfnXRSZWoJlWWI3DNp6uAoj8hIrYaqHjrVMe1SRmn/tmQ7WTjbAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAHj+2Xv7A5/Gg9h5Woc6+YmNuoKItkcyLQeMreEfmbkAX2dr3I7Kh2F93Pt+2G1ZbmZeUe+ZgJPTMF8L69jhTLjGdiZ11Fdhc03O9xQ8qSoETTLuzlpC7ID0hH3Ub0tqwLTbEbqosWmdJZsiRftEros8f02/LgYiXRtsuds5VwtOBHwGAtpCOBZXIAeFmLidnVdFFPzzmkFfYVLZ7iLE77uhJrOpszAZhPEzEftnxcR0tw2iAKyCHWrgc9++3a0DVBCOVMW+a1rvknOuoHog+JNJXVuj7QWsmnXukIPyuwJAlULRcq+oEpHgipgmCeA6Kvrdjzze4HOS9qaxeeWHOoA=</ds:X509Certificate>
+			</ds:X509Data>
+		</ds:KeyInfo>
+		<ds:Object>
+			<xades:QualifyingProperties Target="#xmldsig-273078a5-1957-4fac-822d-d52ee4f19423">
+				<xades:SignedProperties Id="xmldsig-273078a5-1957-4fac-822d-d52ee4f19423-signedprops">
+					<xades:SignedSignatureProperties>
+						<xades:SigningTime>2025-01-20T19:57:00.646014+07:00</xades:SigningTime>
+						<xades:SigningCertificate>
+							<xades:Cert>
+								<xades:CertDigest>
+									<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+									<ds:DigestValue>97jz5zbmOFbu431VsvCVIU7Q4jQwR5oU3hSKSWAh52V6U6t1NftZxmR+L3WbbnuJMjw8Ux6nyKYA/7ooAPFhDQ==</ds:DigestValue>
+								</xades:CertDigest>
+								<xades:IssuerSerial>
+									<ds:X509IssuerName>&lt;Name(CN=นายทดสอบ จำกัด 1,O=บริษัท ทดสอบ จำกัด)&gt;</ds:X509IssuerName>
+									<ds:X509SerialNumber>491864825505679022641416120530378936021864421411</ds:X509SerialNumber>
+								</xades:IssuerSerial>
+							</xades:Cert>
+						</xades:SigningCertificate>
+					</xades:SignedSignatureProperties>
+				</xades:SignedProperties>
+			</xades:QualifyingProperties>
+		</ds:Object>
+	</ds:Signature>
+</rsm:TaxInvoice_CrossIndustryInvoice>
