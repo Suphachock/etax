@@ -132,7 +132,7 @@ def print_verification_result(result):
 # ตัวอย่างการใช้งาน
 if __name__ == "__main__":
     # ตัวอย่างการตรวจสอบโดยใช้ certificate ที่ฝังใน XML
-    result = verify_xml_signature_detailed("xml_pass.xml")
+    result = verify_xml_signature_detailed("999.xml")
     print_verification_result(result)
     
     # ตัวอย่างการตรวจสอบโดยใช้ certificate ภายนอก
